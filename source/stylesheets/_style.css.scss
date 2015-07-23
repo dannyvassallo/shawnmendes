@@ -1,4 +1,6 @@
-$rd-backgroundcolor: #d8edf8;
+$purple: #283891;
+$rd-backgroundcolor: #fff;
+$purple-lt: #8f7bda;
 
 html{
   min-height:100%;/* make sure it is at least as tall as the viewport */
@@ -7,6 +9,7 @@ html{
 
 body{
   height: 100%;
+  font-family: 'PlacardMT-BoldCondensed';
 }
 
 @font-face {
@@ -23,7 +26,7 @@ body{
 
 #background{
   position: absolute;
-  top: 0;
+  top: -35%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -31,4 +34,54 @@ body{
   width: 100%;
   z-index: -99999;
   background-color: $rd-backgroundcolor;
+  background-image: url('https://s3.amazonaws.com/myfangate.com/5sos-summer/summerbg.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.header{
+  padding-top: 50px;
+}
+
+.promo{
+  padding-top: 50px;
+}
+
+.prizing{
+  color: $purple;
+  h2{
+    font-size: 50px;
+    color: white;
+  }
+  p{
+    color: white;
+  }
+}
+
+.hider{
+  display: none;
+}
+
+#contest-wrap{
+  background-color: $purple-lt;
+}
+
+.contest-header{  
+  height: 400px;
+  margin-top: -200px;
+  margin-bottom: -210px;
+  background-image: url('https://s3.amazonaws.com/myfangate.com/shawnmendes/gradient.png');
+  background-repeat: repeat-x;
+}
+
+.text-wrap{
+  color: white;
+  a{
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+.prizing h3{
+  color: white;
 }
