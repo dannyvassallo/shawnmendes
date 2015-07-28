@@ -13,6 +13,7 @@ function validateAge() {
     }
     else{
         $('#age-gate').addClass('hider');
+        window.scrollTo(0,0);
         $('#code-gate').removeClass('hider');
         return false
     }
